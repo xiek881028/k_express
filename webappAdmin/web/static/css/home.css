@@ -1,0 +1,152 @@
+/* k_indexBox */
+.k_indexBox{overflow:hidden;}
+.k_indexBox.floor1{border-bottom:1px solid #ccc;border-top:1px solid #ccc;padding-bottom:10px;background:url(../images/k_bg_wen.png) repeat;}
+.k_indexBox.floor2{padding-top:5px;}
+.k_indexBox.floor3{background-color:#DB5941;}
+.k_indexBox.floor3 .floorBox .box{margin-top:15px;margin-bottom:15px;}
+.k_indexBox .floorBox{max-width:1280px;margin:0 auto;overflow:hidden;}
+.lunBox ul li a,
+.lunBox ul li a img,
+.k_indexBox .activityList li a,
+.k_indexBox .activityList li a img,
+.k_indexBox .tagList li a,
+.k_indexBox .tagList li a img{display:block;width:100%;}
+.lunBox .lun{max-width:1280px;margin:0 auto;}
+.lunBox ul li a{position:relative;}
+.lunBox ul li a canvas{position:absolute;}
+.k_indexBox .tagList{padding-left:0;padding-right:0;}
+.k_indexBox .tagList li{padding-bottom:10px;padding-left:5px;padding-right:5px;-webkit-transform:rotateY(90deg);transform:rotateY(90deg);}
+.k_indexBox .tagList li.move{-webkit-transition:all 0.4s;transition:all 0.4s;-webkit-transform:rotateY(0);transform:rotateY(0);}
+.k_indexBox .tagList li a{position:relative;}
+.k_indexBox .tagList li a span{position:absolute;bottom:0;left:0;right:0;height:24px;line-height:24px;font-size:12px;text-align:center;color:#fff;background:rgba(0,0,0,0.4)}
+/*.k_indexBox .activityList li.move a:hover,
+.k_indexBox .tagList li a:hover{background:-webkit-linear-gradient(#aaa,#000);}
+.k_indexBox .activityList li.move a:hover img,
+.k_indexBox .tagList li a:hover img{opacity:0.5;-webkit-transition:all 1s;transition:all 1s;}*/
+.k_indexBox .activityList{padding:0;}
+.k_indexBox .activityList li{padding-bottom:5px;padding-left:5px;padding-right:5px;}
+.k_indexBox .activityList li img{opacity:0;-webkit-transform:scale3d(0,0,1);transform:scale3d(0,0,1);}
+.k_indexBox .activityList li.move img{opacity:1;-webkit-transition:all 0.6s;transition:all 0.6s;-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+.k_indexBox.floor1 .title{margin-top:20px;margin-left:5px;margin-right:5px;font-size:16px;border-bottom-color:#ccc;}
+.k_indexBox.floor3 .box{color:#fff;}
+.k_indexBox.floor3 .box .headIcon{width:80px;margin:0 auto;display:block;border-radius:40px;opacity:0;}
+.k_indexBox.floor3 .box.move .headIcon{opacity:1;-webkit-transition:all 0.6s;transition:all 0.6s;-webkit-transition-delay:0.4s;transition-delay:0.4s;}
+.k_indexBox.floor3 .box .txtBox{padding-left:0;padding-right:0;position:relative;right:-50px;opacity:0;-webkit-transition:all 0.4s;transition:all 0.4s;}
+.k_indexBox.floor3 .box .txtBox .title{font-size:18px;line-height:50px;padding:10px 0;text-align:center;}
+.k_indexBox.floor3 .box .txtBox p{font-size:14px;}
+.k_indexBox.floor3 .box.move .txtBox{right:0;opacity:1;-webkit-transition:all 0.6s;transition:all 0.6s;-webkit-transition-delay:1s;transition-delay:1s;}
+@media(min-width: 768px){
+.k_indexBox.floor3 .floorBox .box{margin-bottom:30px;}
+.k_indexBox .tagList li a span{height:40px;line-height:40px;font-size:20px;}
+.k_indexBox.floor1 .title{margin-top:40px;font-size:24px;}
+.k_indexBox.floor3 .box .txtBox .title{font-size:28px;}
+.k_indexBox.floor3 .box .txtBox p{font-size:18px;}
+.k_indexBox.floor3 .box .headIcon{width:150px;border-radius:75px;}
+.k_indexBox.floor3 .box .txtBox{padding-left:30px;padding-right:30px;}
+.lunBox .left,
+.lunBox .right{display:none;}
+}
+
+@media(min-width: 1200px){
+.k_indexBox.floor3 .box .imgBox{margin-top:140px;}
+}
+@media(min-width: 1350px){
+.lunBox .lun{position:relative;}
+.lunBox .left{background:url(../images/k_lun_left.png);width:200px;height:205px;bottom:230px;left:-130px;}
+.lunBox .right{background:url(../images/k_lun_right.png);width:120px;height:134px;bottom:0;right:-95px;}
+.lunBox .left,
+.lunBox .right{background-size:100%;position:absolute;display:block;}
+}
+
+/* k_logsBox */
+.k_logsBox{position:relative;}
+.k_logsBox .headBox{text-align:center;padding:40px 0 20px;position:relative;z-index:1;}
+.k_logsBox .headBox span{padding:10px 40px;font-size:12px;line-height:10px;text-transform:uppercase;display:inline-block;background:#fff;border:1px solid #e5e5e5;color:#bbb;font-weight:500;border-radius:3px;}
+.k_logsBox .centerBox::before{content:"";position:absolute;width:2px;background:#e5e5e5;height:100%;left:50%;margin-left:-1px;}
+.k_logsBox .centerBox .list{overflow:hidden;}
+.k_logsBox .centerBox .list article{width:50%;position:relative;}
+.k_logsBox .centerBox .list article i.dian{position:absolute;width:12px;height:12px;border:3px solid #fff;border-radius:50%;background:#e5e5e5;top:15px;}
+.k_logsBox .centerBox .list article.right{padding-left:15px;float:right;clear:right;}
+.k_logsBox .centerBox .list article.left{padding-right:15px;float:left;clear:left;}
+.k_logsBox .centerBox .list article.right i.dian{left:-6px;}
+.k_logsBox .centerBox .list article.left i.dian{right:-6px;}
+.k_logsBox .centerBox .list .txt{padding:15px;box-shadow:0 1px 1px 0 rgba(0,0,0,0.15);background:#eee;border-radius:3px;margin-bottom:30px;position:relative;}
+.k_logsBox .centerBox .list .txt::after{content:"";position:absolute;height:0;width:0;border-bottom:9px solid transparent;border-top:9px solid transparent;top:12px;}
+.k_logsBox .centerBox .list article.right .txt::after{border-right:9px solid #eee;left:-8px;}
+.k_logsBox .centerBox .list article.left .txt::after{border-left:9px solid #eee;right:-8px;}
+.k_logsBox .centerBox .list .txt h4{margin:5px 0 5px;font-size:16px;}
+.k_logsBox .centerBox .list .txt p{font-size:12px;line-height:16px;}
+.k_logsBox .k_head{margin-bottom:0;width:300px;margin:0 auto;}
+@media(min-width: 768px){
+.k_logsBox .centerBox .list .txt h4{margin:5px 0 10px;font-size:20px;}
+.k_logsBox .centerBox .list .txt p{font-size:14px;line-height:20px;}
+}
+
+/* k_listBox */
+.k_listBox a,
+.k_listBox a:hover,
+.k_listBox a:active{text-decoration:none;}
+.k_listBox .list{padding:0;-webkit-transition: all .3s ease-out .1s;transition: all .3s ease-out .1s;}
+.k_listBox .list li{padding:2px;}
+.k_listBox .list li a,
+.k_listBox .list li img{display:block;width:100%;height:100%;}
+.k_listBox .list li.imgBox{width:100px;height:100px;}
+.k_listBox .list li.imgBox .hover{position:absolute;top:2px;bottom:2px;left:2px;right:2px;background:#000;opacity:0;-webkit-transform:rotateX(360deg) scale3d(0,0,0);transform:rotateX(360deg) scale3d(0,0,0);-webkit-transition:all 0.4s;transition:all 0.4s;}
+.k_listBox .list li.imgBox .hover .txt{margin:32px 5px;color:#fff;font-size:14px;line-height:16px;overflow:hidden;height:32px;}
+.k_listBox .list li.imgBox .hover .btns{display:none;}
+.k_listBox .list li.imgBox:hover{position:relative;}
+.k_listBox .list li.imgBox:hover .hover{opacity:0.7;-webkit-transform:rotateX(0) scale3d(1,1,1);transform:rotateX(0) scale3d(1,1,1);-webkit-transition:all 0.6s;transition:all 0.6s;}
+.k_listBox .list li.txtBox{width:200px;height:100px;}
+.k_listBox .list li.txtBox a{background:#262524;color:#fff;-webkit-transition:all 0.4s;transition:all 0.4s;}
+.k_listBox .list li.txtBox:hover a{background:#fff;color:#262524;-webkit-transition:all 0.6s;transition:all 0.6s;}
+.k_listBox .list li.txtBox h4{font-size:18px;padding:0 20px;height:40px;line-height:40px;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.k_listBox .list li.txtBox p{display:none;overflow:hidden;}
+.k_listBox .list li.txtBox .btns{padding:0 20px;position:absolute;bottom:10px;left:0;right:0;font-size:12px;}
+.k_listBox .list li.txtBox .btns i{padding-right:10px;font-size:16px;}
+.k_listBox .list li.txtBox .btns .left,
+.k_listBox .list li.txtBox .btns .right{height:18px;line-height:18px;overflow:hidden;}
+.k_listBox .list li.txtBox .btns .left{padding-bottom:5px;}
+.k_listBox nav{display:none;}
+@media(min-width: 500px){
+.k_listBox .list li.imgBox{width:150px;height:150px;}
+.k_listBox .list li.txtBox{width:300px;height:150px;}
+.k_listBox .list li.txtBox h4{font-size:24px;height:100px;line-height:100px;max-width:250px;}
+.k_listBox .list li.txtBox .btns .left{float:left;padding-bottom:0;width:50%;}
+.k_listBox .list li.txtBox .btns .right{float:right;width:40%;text-align:right;}
+.k_listBox .list li.imgBox .hover .txt{margin:50px 8px;font-size:18px;line-height:25px;height:50px;}
+}
+@media(min-width: 800px){
+.k_listBox .list li.imgBox{width:240px;height:240px;}
+.k_listBox .list li.txtBox{width:480px;height:240px;}
+.k_listBox .list li.txtBox h4{font-size:32px;max-width:300px;}
+.k_listBox .list li.txtBox p{padding:0 20px;font-size:16px;line-height:22px;height:66px;display:block;}
+.k_listBox .list li.imgBox .hover .txt{margin:60px 15px;font-size:24px;line-height:30px;height:60px;}
+.k_listBox .list li.imgBox .hover .btns{display:block;position:absolute;bottom:0;left:0;right:0;padding:0 15px 20px;}
+.k_listBox .list li.imgBox .hover .btns .left,
+.k_listBox .list li.imgBox .hover .btns .right{color:#fff;font-size:16px;line-height:24px;margin:5px 0;height:24px;overflow:hidden;}
+.k_listBox .list li.imgBox .hover .btns .left i,
+.k_listBox .list li.imgBox .hover .btns .right i{margin-right:10px;font-size:20px;}
+}
+@media(min-width: 992px){
+.k_listBox nav{position:fixed;top:180px;display:block;-webkit-transition: all .4s ease-out .1s;transition: all .4s ease-out .1s;z-index:2;}
+.k_listBox nav .top{position:absolute;background:url(../images/k_nav_top.png);background-size:100%;width:100px;height:100px;top:-88px;left:-4px;pointer-events:none;}
+.k_listBox nav a{display:block;height:30px;line-height:30px;font-size:15px;width:90px;border-left:1px solid #6c2e17;border-right:1px solid #6c2e17;border-bottom:2px solid #6c2e17;padding:0 4px;color:#a56750;background:#fff;}
+.k_listBox nav a i{background:url(../images/k_yan_face.png);display:inline-block;height:8.8333333px;width:30px;vertical-align:middle;margin-top:-2px;}
+.k_listBox nav a.floor1 i{background-position:0 0;}
+.k_listBox nav a.floor2 i{background-position:-30px 0;}
+.k_listBox nav a.floor3 i{background-position:-60px 0;}
+.k_listBox nav a.floor4 i{background-position:0 -8.833333px;}
+.k_listBox nav a.floor5 i{background-position:-30px -8.833333px;}
+.k_listBox nav a.floor6 i{background-position:-60px -44.16665px;}
+.k_listBox nav a.floor7 i{background-position:0 -17.66666px;}
+.k_listBox nav a.floor8 i{background-position:-30px -17.66666px;}
+.k_listBox nav a.floor9 i{background-position:-60px -17.66666px;}
+.k_listBox nav a.floor10 i{background-position:0 -26.49999px;}
+.k_listBox nav a.floor11 i{background-position:-30px -26.49999px;}
+.k_listBox nav a.floor12 i{background-position:-60px -26.49999px;}
+.k_listBox nav a:hover{color:#d00;}
+}
+
+/* k_detailsBox */
+.k_detailsBox{box-shadow:0 2px 10px rgba(0,0,0,0.4);}
+.k_detailsBox .box{padding:20px 10px;}

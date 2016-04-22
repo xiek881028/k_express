@@ -1,0 +1,12 @@
+{
+	"name" : "base",
+	"css" : "/static/css/base.css",
+	"js" : "/static/js/base.js",
+	"depends" : [	"./jqueryAssets.json",
+			"./publicAssets.json",
+			"./xjqueryAssets.json",
+			"./bootstrapAssets.json",
+			"./buttonAssets.json",
+			"./fontAssets.json"
+			]
+}

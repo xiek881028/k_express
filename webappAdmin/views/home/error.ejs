@@ -1,0 +1,9 @@
+<% include ../layout/header/main.ejs %>
+<h1>404</h1>
+<h2>恭喜你，你突破界限来到了一个错误页面，简直666</h2>
+<% if(baga.env == 'dev'){ %>
+<h1><%= message %></h1>
+<h2><%= error.status %></h2>
+<pre><%= error.stack %></pre>
+<% } %>
+<% include ../layout/footer/main.ejs %>

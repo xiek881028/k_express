@@ -1,0 +1,5 @@
+{
+	"name" : "fonts",
+	"css" : "/assets/font/css/font-awesome.min.css",
+	"depends" : ["./bootstrapAssets.json"]
+}

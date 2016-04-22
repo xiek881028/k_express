@@ -1,0 +1,5 @@
+{
+	"name" : "jQuery.x",
+	"js" : "/assets/jquery/xjquery.js",
+	"depends" : ["./jqueryAssets.json","./bootstrapAssets.json"]
+}

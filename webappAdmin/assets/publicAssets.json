@@ -1,0 +1,5 @@
+{
+	"name" : "publicCss",
+	"css" : "/assets/public/public.css",
+	"depends" : ["./bootstrapAssets.json","./buttonAssets.json"]
+}

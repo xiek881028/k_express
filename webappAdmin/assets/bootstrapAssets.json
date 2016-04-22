@@ -1,0 +1,6 @@
+{
+	"name" : "bootstrap",
+	"css" : "/assets/bootstrap/bootstrap.min.css",
+	"js" : "/assets/bootstrap/bootstrap.min.js",
+	"depends" : "./jqueryAssets.json"
+}

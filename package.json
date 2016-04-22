@@ -1,0 +1,32 @@
+{
+  "name": "bagazhu",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "http": "node ./http-proxy.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "ejs": "~2.3.3",
+    "express": "~4.13.1",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0",
+    "ali-oss" : "~4.1.4",
+    "co" : "~4.6.0",
+    "csurf" : "~1.8.3",
+    "mysql" : "~2.10.2",
+    "express-session" : "~1.13.0",
+    "nodemailer" : "~2.3.0",
+    "canvas" : "*"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "~0.11.1",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-cssmin": "~0.14.0",
+    "grunt-contrib-clean": "~0.4.0"
+  }
+}

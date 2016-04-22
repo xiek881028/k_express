@@ -1,0 +1,9 @@
+gitJson.js
+node_modules
+webappWww/web/cdn
+webappFq/web/cdn
+cdn.json
+npm-debug.log
+!.gitignore
+bin/webapp.json
+config.json

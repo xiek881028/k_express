@@ -1,0 +1,6 @@
+{
+	"name" : "home",
+	"css" : "/static/css/home.css",
+	"js" : "/static/js/home.js",
+	"depends" : ["./baseAssets.json", "./jqueryAssets.json"]
+}
