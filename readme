@@ -1,3 +1,5 @@
+这是一个基于express进行了部分改进的框架。bagazhu.com基于此框架进行搭建。
+tips:
 1.mysql记得安装felixge/node-mysql
 npm install felixge/node-mysql
 2.如果使用grunt，记得安装grunt-cli
